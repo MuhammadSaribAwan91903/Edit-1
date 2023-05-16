@@ -1,0 +1,284 @@
+/* Common Things ka mtlb hr section ma uper or niche se padding aa jai gi jnha jnha section class hogi  */
+/* Common section */
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section h2.section-heading {
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-heading::after {
+    background-color: #e74c3c;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+/* Common section */
+/* header start */
+#header {
+    color: white;
+    background-color: #e74c3c;
+}
+
+#header #logo {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+#header #menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#header #menu li {
+    list-style: none;
+}
+
+#header #menu li a {
+    display: block;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+#header #menu li a:hover {
+    background-color: #c0392b;
+}
+
+/* header end */
+
+/* banner start */
+
+#banner {
+    background-image: url('/Images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 0;
+}
+
+.banner-title {
+    padding-top: 5rem;
+}
+
+.banner-title h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px;
+    /* jo bhi headings hoti ha unke ander by default margin hota ha uper niche se */
+    margin: 0;
+}
+
+.banner-title p.lead {
+    color: white;
+    background-color: rgba(231, 76, 60, 0.7);
+    padding: 10px;
+}
+
+/* banner end */
+
+/* section 1 start */
+.service-box {
+    text-align: center;
+}
+
+.service-box i.fa {
+    color: #e74c3c;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+/* section 1 end */
+/* section 2 start */
+#testimonials {
+    background-image: url('/Images/testimonail\ bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 0;
+    padding: 50px 0px;
+    color: white;
+    position: relative;
+}
+
+#testimonials::before {
+    background-color: rgba(52, 73, 94, 0.7);
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* Ab Ye 100% height jbhi work krti ha jb ap ne position absolute le hoi ho us ke bina work nhi krti */
+}
+.testimonial img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+/* section 2 end */
+/* section 3 start */
+.news-post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-post h3 {
+    font-size: 1.35rem;
+}
+
+.news-post h3 a {
+    color: #e74c3c;
+}
+
+.post-date {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.post-date::before {
+    content: "\f073";
+    font-family: FontAwesome;
+    /* Isko Lagane Ka Tarika Ye Ha Ke Humne Font Awesome Ke Wbsite Pr Ja Kr Us Icon Pr Inspect Krna Ha or wnha se before
+    ma ja kr css copy krni ha or ynha paste krni ha font-family lazmi lagani ha jbhi ye dekhee ga */
+    padding-right: 5px;
+}
+
+.news-post a.readmore {
+    font-size: 15px;
+    color: #e74c3c;
+}
+
+.news-post a.readmore::after {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+/* section 3 end */
+
+/* footer side-bar start */
+#footer-sidebar{
+    color: white;
+    background-color: #34495e;
+    padding: 20px 0px;
+}
+.footer-widget h4::after{
+content: "";
+background-color: white;
+display: block;
+height: 3px;
+width: 70px;
+margin: 10px 0px;
+}
+.footer-widget .latest-news{
+    margin: 0;
+    padding: 0;
+}
+.footer-widget li{
+    list-style: none;
+    margin-bottom: 3px;
+}
+.footer-widget li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-widget li a::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+/* footer side-bar end */
+
+/* footer start */
+#footer{
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0px;
+}
+#social-icons{
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#social-icons li{
+    list-style: none;
+    padding-left:10px ;
+}
+#social-icons li a{
+    color: white;
+    font-size: 23px;
+}
+/* footer end */
+
+@media (min-width: 768px ) and (max-width: 992px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #header #logo {
+        font-size: 1.8rem;
+        margin-top: 7px;
+    }
+    .news-post{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    #header #logo{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    #header #menu{
+        justify-content: center;
+    }
+    .banner-title {
+        padding-top: 0rem;
+    }
+    .banner-title h1{
+        font-size: 1.7rem;
+    }
+    .testimonial{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+    .news-post{
+        margin-bottom: 30px;
+    }
+    .footer-widget{
+        margin-bottom: 20px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #social-icons{
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #header #menu li {
+        list-style: none;
+        font-size: 0.6rem;
+    }
+    #header #menu li a {
+        display: block;
+        color: white;
+        padding: 15px 8px;
+        text-decoration: none;
+    }
+}
