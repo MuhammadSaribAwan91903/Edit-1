@@ -58,7 +58,7 @@
 /* banner start */
 
 #banner {
-    background-image: url('./Images/banner.jpg');
+    background-image: url('./banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +100,7 @@
 /* section 1 end */
 /* section 2 start */
 #testimonials {
-    background-image: url('./Images/testimonail\ bg.jpg');
+    background-image: url('./testimonail\ bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
